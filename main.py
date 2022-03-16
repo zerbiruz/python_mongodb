@@ -4,7 +4,8 @@ from fastapi import FastAPI, File, UploadFile
 from pydantic import BaseModel
 from pymongo import MongoClient
 
-from secret_data import PASSWORD
+# from secret_data import PASSWORD
+from mypackage.secret_data import PASSWORD
 
 
 class User(BaseModel):
